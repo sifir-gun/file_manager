@@ -1,0 +1,33 @@
+# Configuration pour File Watcher FTP
+
+# Chemins des fichiers et dossiers
+paths:
+  database: ./data/TransferHistory.db
+  watched_directory: ~/Documents/watched  # Répertoire par défaut à surveiller
+
+# Configuration FTP
+ftp:
+  server: ftp.example.com
+  port: 21
+  user: username
+  # Le mot de passe ne devrait pas être stocké ici en production
+  # password: password
+
+# Configuration de l'application
+app:
+  check_interval: 10  # Intervalle en secondes pour vérifier les nouveaux fichiers
+  max_retries: 3  # Nombre maximum de tentatives pour les transferts FTP
+
+# Configuration de la journalisation
+logging:
+  level: INFO
+  file: ./logs/file_watcher.log
+
+# Configuration de l'interface utilisateur
+ui:
+  language: fr  # Langue par défaut de l'interface
+  theme: light  # Thème de l'interface (light/dark)
+
+# Autres paramètres
+other:
+  enable_notifications: true

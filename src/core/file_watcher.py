@@ -18,8 +18,8 @@ from PyQt5.QtWidgets import (
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from dialog import FTPCredentialsDialog
-from ftp_manager import FTPManager
-from notification_manager import create_icon_image
+from src.core.ftp_manager import FTPManager
+from src.utils.notification_manager import create_icon_image
 
 
 class FileWatcher(QMainWindow):

@@ -7,8 +7,8 @@ et affiche une icône de notification.
 
 import sys
 from PyQt5.QtWidgets import QApplication, QSystemTrayIcon
-from file_watcher import FileWatcher
-from notification_manager import create_icon_image
+from src.core.file_watcher import FileWatcher
+from src.utils.notification_manager import create_icon_image
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
