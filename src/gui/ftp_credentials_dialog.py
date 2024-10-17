@@ -13,13 +13,28 @@ from PyQt5.QtWidgets import (
 
 
 class FTPCredentialsDialog(QDialog):
+    """
+    Fenêtre de dialogue pour saisir les informations d'identification FTP.
+    """
+
     def __init__(self, parent=None):
+        """
+        Initialise la fenêtre de dialogue des informations FTP.
+
+        Args:
+            parent (QWidget, optional):
+            Le widget parent de la fenêtre de dialogue.
+                Par défaut None.
+        """
         super().__init__(parent)
         self.setWindowTitle("FTP Credentials")
         self.setup_ui()
         self.result = None
 
     def setup_ui(self):
+        """
+        Configure l'interface utilisateur de la fenêtre de dialogue.
+        """
         layout = QVBoxLayout(self)
 
         self.server_input = QLineEdit(self)
@@ -45,6 +60,14 @@ class FTPCredentialsDialog(QDialog):
         layout.addWidget(self.buttons)
 
     def accept(self):
-        self.result = (self.server_input.text(), self.user_input.text(),
-                       self.password_input.text())
+        """
+        Gère l'événement lorsque l'utilisateur clique sur le bouton 'Ok'.
+
+        Récupère les informations saisies et ferme la fenêtre de dialogue.
+        """
+        self.result = (
+            self.server_input.text(),
+            self.user_input.text(),
+            self.password_input.text()
+        )
         super().accept()
