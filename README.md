@@ -1,8 +1,8 @@
-# File Watcher FTP
+# File Manager FTP
 
 ## Description
 
-**File Watcher FTP** est une application Python qui surveille un répertoire local spécifié par l'utilisateur et télécharge automatiquement tout nouveau fichier ajouté vers un serveur FTP. Elle offre une interface graphique conviviale grâce à PyQt5, permettant de configurer facilement les informations d'identification FTP et de sélectionner le répertoire à surveiller. L'application affiche également une icône dans la barre des tâches pour indiquer l'état des transferts de fichiers.
+**File Manager FTP** est une application Python qui surveille un répertoire local spécifié par l'utilisateur et télécharge automatiquement tout nouveau fichier ajouté vers un serveur FTP. Elle offre une interface graphique conviviale grâce à PyQt5, permettant de configurer facilement les informations d'identification FTP et de sélectionner le répertoire à surveiller. L'application affiche également une icône dans la barre des tâches pour indiquer l'état des transferts de fichiers.
 
 ## Fonctionnalités
 
@@ -84,7 +84,7 @@ other:
 ## Structure du projet
 
 ```
-file_watcher_ftp/
+file_manager_ftp/
 │
 ├── src/
 │   ├── gui/
