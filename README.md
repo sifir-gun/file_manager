@@ -148,9 +148,8 @@ Ce projet est sous licence MIT - consultez le fichier LICENSE pour plus de déta
 
 ## Auteurs
 
-- Guney TASDELEN - Créateur et développeur principal
+- Guney TASDELEN
 
 ## Remerciements
 
 - Merci aux développeurs des bibliothèques **PyQt5**, **Pillow**, **watchdog**, et **PyYAML** pour leurs outils puissants.
-- Merci à tous ceux qui ont contribué à améliorer ce projet.
